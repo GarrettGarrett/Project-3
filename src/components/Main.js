@@ -24,41 +24,49 @@ function Main(props){
      }
 
     function rotateChores () {
-        console.log(chores)
-        let first = chores.shift();
-        chores.push(first);
-        console.log(chores)
+        const cloneChores = chores.slice();
+        let first = cloneChores.shift();
+        cloneChores.push(first);
+        setChores(cloneChores)
         return chores;
     }
 
+    
     useEffect(() => {
         getRoommates()
         getChores()
     }, []);
 
+        const loading = () => {
+            return <h1>Loading ...</h1>
+        }
+        const loaded = () => {
+            return (
+                <section>
+                    {roommates.map((person, index) => (
+                        <div key={person._id} className="person">
+                            <h1>{person.name}</h1>
+                            <h4>{chores[index]}</h4>
+                        </div>
+                    ))}
 
-
-    return (
-        <section>
-            {roommates.map((person) => (
-                <div key={person._id} className="person">
-                    <h3>{person.name}</h3>
-                    <h4>{chores[person.chartPosition]}</h4>
-                </div>
-            ))}
-
-            <div 
-                        onClick={rotateChores}
+                    <div 
+                        onClick={() => rotateChores()}
                         style={{
                             cursor: 'pointer',
                             marginRight: 10
                         }}>
                             Rotate Chores
-            </div>
-        </section>
-        
-    );
-  } 
-
+                    </div>
+                </section>
+                
+            );
+        } 
+    return (
+        <div>
+            {roommates&&chores ? loaded() : loading()}
+        </div>
+    )
+    }
 
   export default Main;
