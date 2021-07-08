@@ -32,14 +32,14 @@ const loaded = () => {
             <div className="imgContainer">
                 <img 
                     className="roommates" 
-                    src="https://i.imgur.com/Xyt8l4q.png" alt="" 
+                    src="https://i.imgur.com/at1BX4Z.png" alt="" 
                     width="700"
                 />
 
                 <img 
                 className="chores" 
-                src="https://i.imgur.com/0Pr87ea.png" alt="" 
-                width="600"
+                src="https://i.imgur.com/Odp9CUD.png" alt="" 
+                width="500"
                 style={{ transform: `rotate(${props.direction}deg)` }}
 
                 />
