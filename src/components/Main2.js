@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 import Index from '../pages/Index';
 import Show from "../pages/Show";
-import Button from "@material-ui/core/Button";
-import { RotateRight } from '@material-ui/icons';
+
 
 
 function Main(props){
