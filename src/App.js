@@ -7,13 +7,6 @@ import Big from "@material-ui/core/Button";
 import { useState, useEffect } from 'react';
 
 
-
-
-
-
-
-
-
 function App() {
 
 

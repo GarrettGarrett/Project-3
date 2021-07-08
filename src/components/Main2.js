@@ -10,9 +10,12 @@ function Main(props){
     const [ roommates, setRoommates ] = useState(null);
     const [ chores, setChores ] = useState(null);
     const [ direction, setDirection ] = useState(0);
-    const URL = 'http://localhost:4000/roommates/'
-    const ROOMMATES_URL = 'http://localhost:4000/roommates'
-    const CHORES_URL = 'http://localhost:4000/chores'
+    // const URL = 'http://localhost:4000/roommates/'
+    // const ROOMMATES_URL = 'http://localhost:4000/roommates'
+    // const CHORES_URL = 'http://localhost:4000/chores'
+    const URL = 'https://project-3-heroku-backend.herokuapp.com/roommates/'
+    const ROOMMATES_URL = 'https://project-3-heroku-backend.herokuapp.com/roommates'
+    const CHORES_URL = 'https://project-3-heroku-backend.herokuapp.com/chores'
 
     // fetch people data from backend
     const getRoommates = async () => {
