@@ -2,7 +2,7 @@ function Footer(props) {
   return (
   <footer 
   style={{position:"fixed", bottom:"0", left:"0", width:"100%" }}
-  id='footer' class="page-footer #66bb6a green lighten-1" >
+  id='footer' class="white-text #6200ea deep-purple accent-4" >
   <div class="container">
     <div class="row">
 
@@ -15,7 +15,7 @@ function Footer(props) {
   </div>
   <div class="footer-copyright">
     <div class="container">
-    © 2021 Copyright 
+    Copyright © All Rights Reserved 2021 Chore Wheel 
     </div>
   </div>
 </footer>

@@ -9,13 +9,11 @@ function Header(props){
   };
   return (
   
-    <nav>
+    <nav class="#6200ea deep-purple accent-4">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Chore Chart</a>
+      <a href="#" class="brand-logo">Chore Wheel</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        {/* <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li> */}
+
       </ul>
     </div>
   </nav>

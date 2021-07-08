@@ -35,20 +35,24 @@
 
 .imgContainer { 
   position: absolute;
+  
    
   
 }
 
 .roommates {
   position: absolute;
-  top: 15px;
-  left: 15px
+  top: 15px; 
+  left: 115px;
+  
+  
 }
 
 .chores {
  position: absolute;
- top: 82px;
- left: 64.2px
+ top: 70px;
+ left: 165px;
+ 
 } 
 
 .body {
@@ -60,5 +64,4 @@
 .main {
   flex: 1 0 auto;
 }
-
 

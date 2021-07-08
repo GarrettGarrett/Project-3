@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Index from '../pages/Index';
+import Button from "@material-ui/core/Button";
+import { RotateRight } from '@material-ui/icons';
 
 
 
@@ -82,13 +84,13 @@ function Main(props){
                     <div className="imgContainer">
                         <img 
                             className="roommates" 
-                            src="https://i.imgur.com/Vd6r2nn.png" alt="" 
+                            src="https://i.imgur.com/Xyt8l4q.png" alt="" 
                             width="700"
                         />
 
                         <img 
                         className="chores" 
-                        src="https://i.imgur.com/v0fob5o.png" alt="" 
+                        src="https://i.imgur.com/0Pr87ea.png" alt="" 
                         width="600"
                         style={{ transform: `rotate(${direction}deg)` }}
 
@@ -97,17 +99,21 @@ function Main(props){
 
 
         
+                    <Button
+                    endIcon={<RotateRight />}
+                    size="large"
+                    className='rotateWheelBtn'
+                    variant="contained" 
+                    color="secondary"
+                    onClick={() => rotateWheel()}
+                    style={{
+                        fontSize: 15,
+                        margin: 15
+                    }}
+                    >
+                    Rotate Chores
+                    </Button>
 
-                    <div 
-                        className='rotateWheelBtn'
-                        onClick={() => rotateWheel()}
-                        style={{
-                            cursor: 'pointer',
-                            marginRight: 10,
-                            padding: 20
-                        }}>
-                            Rotate Chores
-                    </div>   
                     
                 </section>
                 
