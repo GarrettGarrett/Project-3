@@ -38,7 +38,7 @@ const loaded = () => {
 
                 <img 
                 className="chores" 
-                src="https://i.imgur.com/Odp9CUD.png" alt="" 
+                src="https://i.imgur.com/5GTwgjO.png" alt="" 
                 width="500"
                 style={{ transform: `rotate(${props.direction}deg)` }}
 
