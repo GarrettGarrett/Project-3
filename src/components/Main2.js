@@ -76,7 +76,8 @@ function Main(props){
         <BrowserRouter>
         <Switch>
           <Route exact path="/">
-            <Index roommates={roommates} 
+            <Index URL={URL}
+            roommates={roommates} 
             direction={direction} 
             chores={chores} 
             getChores={getChores}
