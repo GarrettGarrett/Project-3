@@ -32,24 +32,30 @@
 
 <!-- ABOUT THE PROJECT -->
 # About The Project
-A responsive web application that helps allocate house chores between roommates.  Work in progress.  
+A responsive web application that helps roommates allocate their house responsibilities. 
 
-The current version of this app can be viewed [here.](https://wheres-waldo1.herokuapp.com/)
+The current version of this app can be viewed [here.](https://project-3-heroku-app.herokuapp.com/)
 
 # Built With
-
+* [React.js](https://reactjs.org/)
+* [Node.js](https://nodejs.org/en/)
+* [Express.js](https://expressjs.com/)
+* [MongoDB](https://www.mongodb.com/)
 * [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JavaScript](https://www.javascript.com/)
+* [Heroku](https://dashboard.heroku.com/apps)
+
+
 
 
 # Wireframe
 
 Here are my wireframes drawn with [InVision](https://www.invisionapp.com/).  
 
-![Main Menu](https://i.imgur.com/WCr5IvZ.png)
-![Searching for Waldo...](https://i.imgur.com/MkNUYpD.png)
-![Results Page](https://i.imgur.com/akt3MXr.png)
+![Main Menu](https://trello-attachments.s3.amazonaws.com/60deb4469e5e6732a0676cb7/872x846/4eac80828afdfe8b3679cea2a038c482/Screen_Shot_2021-07-01_at_11.37.46_PM.png)
+![Update Page](https://trello-attachments.s3.amazonaws.com/60deb45e277a886dc867b2ae/880x856/b4cb40e8ca7c93a5edee482d48df2ffc/Screen_Shot_2021-07-01_at_11.37.27_PM.png)
+
 
 
 
@@ -57,16 +63,14 @@ Here are my wireframes drawn with [InVision](https://www.invisionapp.com/).
 <!-- USAGE EXAMPLES -->
 # Screenshots
 ### Main Menu
-![Main Menu](https://i.imgur.com/vPR8xc2.png)
+![Main Menu](https://i.imgur.com/4lHh7cn.png)
 
-### Searching for Waldo...
-![Searching for Waldo...](https://i.imgur.com/u97wO7E.png)
+### Show/Edit Page
+![Show/Edit Page](https://i.imgur.com/7okhkV2.png)
 
-### Results Page:
-![Results Page](https://i.imgur.com/S3ukN96.png)
 
 
 # Future Enhancements
-* User Authentication
-* Add a Hint Button
+* Ability to notify all users
+
 
