@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import Button from "@material-ui/core/Button";
+import { Edit } from "@material-ui/icons";
 
 
 function Show({ match, history, roommates, updateDescription }) {
@@ -43,7 +45,7 @@ function Show({ match, history, roommates, updateDescription }) {
     
     // note
     return (
-        <div>
+        <div className="container">
             {roommate ? loaded() : loading()}
             <form onSubmit={handleSubmit}>
                 <input 
@@ -60,8 +62,29 @@ function Show({ match, history, roommates, updateDescription }) {
                     onChange={handleChange} 
                 />
 
-                <input type="submit" value="Edit Description" />
+                {/* <input type="submit" value="Edit Description" /> */}
+
+                <Button
+                endIcon={<Edit />}
+                size="large"
+                type="submit"
+                className='rotateWheelBtn'
+                variant="contained" 
+                color="secondary"
+                onChange={handleChange} 
+                onClick={() => handleSubmit}
+                style={{
+                    fontSize: 15,
+                    margin: 15
+                }}
+                >
+                Edit Description
+                </Button>
             </form>
+
+
+
+
         </div>
     );
 }
