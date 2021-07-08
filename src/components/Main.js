@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Index from '../pages/Index';
+import Show from "../pages/Show";
 import Button from "@material-ui/core/Button";
 import { RotateRight } from '@material-ui/icons';
 
@@ -11,6 +12,7 @@ function Main(props){
     const [ roommates, setRoommates ] = useState(null);
     const [ chores, setChores ] = useState(null);
     const [ direction, setDirection ] = useState(0);
+    const URL = 'http://localhost:4000/roommates/'
     const ROOMMATES_URL = 'http://localhost:4000/roommates'
     const CHORES_URL = 'http://localhost:4000/chores'
 
@@ -49,7 +51,19 @@ function Main(props){
         setDirection(direction + (45))
         
     }
+
+    const updateEmail = async (roommate, id) => {
+        //   make put request to create cheese
+        await fetch(URL + id, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "Application/json",
+            },
+            body: JSON.stringify(roommate),
     
+            });
+            getRoommates();
+        }
 
     useEffect(() => {
         getRoommates()
@@ -61,7 +75,8 @@ function Main(props){
         }
         const loaded = () => {
             return (
-                <section className='mainDiv'>
+                <main className='mainDiv'>
+ 
                     {/* {roommates.map((person, index) => (
                         <div key={person._id} className="person">
                             <h1>{person.name}</h1>
@@ -78,9 +93,6 @@ function Main(props){
                         }}>
                             Rotate Chores
                     </div> */}
-
-
-
                     <div className="imgContainer">
                         <img 
                             className="roommates" 
@@ -96,27 +108,24 @@ function Main(props){
 
                         />
                     </div>
-
-
         
                     <Button
-                    endIcon={<RotateRight />}
-                    size="large"
-                    className='rotateWheelBtn'
-                    variant="contained" 
-                    color="secondary"
-                    onClick={() => rotateWheel()}
-                    style={{
-                        fontSize: 15,
-                        margin: 15
-                    }}
-                    >
-                    Rotate Chores
+                        endIcon={<RotateRight />}
+                        size="large"
+                        className='rotateWheelBtn'
+                        variant="contained" 
+                        color="secondary"
+                        onClick={() => rotateWheel()}
+                        style={{
+                            fontSize: 15,
+                            margin: 15
+                        }}
+                        >
+                        Rotate Chores
                     </Button>
 
-                    
-                </section>
-                
+                </main>
+            
             );
         } 
     return (

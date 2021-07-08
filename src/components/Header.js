@@ -11,7 +11,7 @@ function Header(props){
   
     <nav class="#6200ea deep-purple accent-4">
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Chore Wheel</a>
+      <a href="/" class="brand-logo">Chore Wheel</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
 
       </ul>
