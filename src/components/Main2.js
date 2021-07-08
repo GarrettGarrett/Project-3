@@ -54,7 +54,7 @@ function Main(props){
         
     }
 
-    const updateEmail = async (roommate, id) => {
+    const updateDescription = async (roommate, id) => {
         //   make put request to create cheese
         await fetch(URL + id, {
             method: "PUT",
@@ -84,7 +84,7 @@ function Main(props){
             getChores={getChores}
             rotateChores={rotateChores} 
             rotateWheel={rotateWheel} 
-            updateEmail={updateEmail}         
+            updateDescription={updateDescription}         
             />
           </Route>
           
@@ -97,7 +97,7 @@ function Main(props){
               getChores={getChores}
               rotateChores={rotateChores} 
               rotateWheel={rotateWheel} 
-              updateEmail={updateEmail}                
+              updateDescription={updateDescription}                
                 {...rp}
               />
             )}

@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 
 
-function Show({ match, history, roommates, updateEmail }) {
+function Show({ match, history, roommates, updateDescription }) {
     // if(!user) return <Redirect to="/login" />
     const [ editForm, setEditForm ] = useState({
-        name: '',
-        email: ''
+        chore: '',
+        choreDescription: '',
+        choreImg: ''
         
     });
     const [roommate, setRoommate] = useState(null);
@@ -23,8 +24,9 @@ function Show({ match, history, roommates, updateEmail }) {
     const loaded = () => {
         return (
             <div className="chee">
-                <h1>{roommate.name}</h1>
-                <h2>{roommate.email}</h2>
+                <h1>{roommate.chore}</h1>
+                <img width="200" src={roommate.choreImg} alt={roommate.chore} />
+                <h4>{roommate.choreDescription}</h4>
                 
             </div>
         );
@@ -34,8 +36,8 @@ function Show({ match, history, roommates, updateEmail }) {
     }
     const handleSubmit = (event) => {
         event.preventDefault();
-        const {_id, name, email} = editForm;
-        updateEmail({ name, email }, _id);
+        const {_id, chore, choreDescription, choreImg} = editForm;
+        updateDescription({ chore, choreDescription, choreImg }, _id);
     }
 
     
@@ -46,18 +48,19 @@ function Show({ match, history, roommates, updateEmail }) {
             <form onSubmit={handleSubmit}>
                 <input 
                     type="text" 
-                    name="name" 
-                    value={editForm.name} 
+                    name="chore" 
+                    value=""
+                    // value={editForm.chore} 
                     onChange={handleChange} 
                 />
                 <input 
                     type="text" 
-                    name="email" 
-                    value={editForm.email} 
+                    name="choreDescription" 
+                    value={editForm.choreDescription} 
                     onChange={handleChange} 
                 />
 
-                <input type="submit" value="Edit Email" />
+                <input type="submit" value="Edit Description" />
             </form>
         </div>
     );
