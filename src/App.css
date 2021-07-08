@@ -24,15 +24,41 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+.mainDiv {
+  position: absolute;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imgContainer { 
+  position: absolute;
+   
+  
 }
+
+.roommates {
+  position: absolute;
+  top: 15px;
+  left: 15px
+}
+
+.chores {
+ position: absolute;
+ top: 82px;
+ left: 64.2px
+} 
+
+.body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+
