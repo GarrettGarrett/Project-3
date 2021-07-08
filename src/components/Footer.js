@@ -15,27 +15,26 @@ function Footer(props) {
     <div class="row">
 
         
-        <a class="grey-text text-lighten-3" href="/roommates/60df91acf6d4295fa04418b2">Bathrooms</a>
+        <a id='test' class="grey-text text-lighten-3" href="/roommates/60df91acf6d4295fa04418b2">Bathrooms</a>
         <span> </span> 
 
 
-        <a class="grey-text text-lighten-3" href="/roommates/60df91c3f6d4295fa04418b4">Vacuuming</a>
+        <a id='test' class="grey-text text-lighten-3" href="/roommates/60df91c3f6d4295fa04418b4">Vacuuming</a>
         <span>  </span>
 
-        <a class="grey-text text-lighten-3" href="/roommates/60df91d7f6d4295fa04418b6">Dishes</a>
+        <a id='test' class="grey-text text-lighten-3" href="/roommates/60df91d7f6d4295fa04418b6">Dishes</a>
         <span>  </span>
 
-        <a class="grey-text text-lighten-3" href="/roommates/60df91e9f6d4295fa04418b8">Mopping</a>
+        <a id='test' class="grey-text text-lighten-3" href="/roommates/60df91e9f6d4295fa04418b8">Mopping</a>
         <span>  </span>
 
-        <a class="grey-text text-lighten-3" href="/roommates/60df9200f6d4295fa04418ba">Garbage</a>
+        <a id='test' class="grey-text text-lighten-3" href="/roommates/60df9200f6d4295fa04418ba">Garbage</a>
         <span>  </span>
 
-        <a class="grey-text text-lighten-3" href="/roommates/60e67f61bda5ce3c9932dfa1">Fridge</a>
+        <a id='test' class="grey-text text-lighten-3" href="/roommates/60e67f61bda5ce3c9932dfa1">Fridge</a>
         <span>  </span>
 
-
-          
+         
         
 
     </div>

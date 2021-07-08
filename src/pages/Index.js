@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom"
 import Button from "@material-ui/core/Button";
 import { RotateRight } from '@material-ui/icons';
+import { Email } from "@material-ui/icons"; 
 
 
 function Index(props){
@@ -57,6 +58,21 @@ const loaded = () => {
                 }}
                 >
                 Rotate Chores
+            </Button>
+
+            <Button
+                endIcon={<Email />}
+                size="large"
+                className='rotateWheelBtn'
+                variant="contained" 
+                color="primary"
+                onClick={() => alert("This is a future enhancement")}
+                style={{
+                    fontSize: 15,
+                    margin: 15
+                }}
+                >
+                Notify Everyone
             </Button>
 
         </main>

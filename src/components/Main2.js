@@ -6,10 +6,6 @@ import Button from "@material-ui/core/Button";
 import { RotateRight } from '@material-ui/icons';
 
 
-
-
-
-
 function Main(props){
     const [ roommates, setRoommates ] = useState(null);
     const [ chores, setChores ] = useState(null);
