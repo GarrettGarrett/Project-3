@@ -32,7 +32,7 @@
 
 <!-- ABOUT THE PROJECT -->
 # About The Project
-A responsive web application that helps roommates allocate their house responsibilities. 
+A responsive web application that helps roommates allocate their house responsibilities 
 
 The current version of this app can be viewed [here.](https://project-3-heroku-app.herokuapp.com/)
 
